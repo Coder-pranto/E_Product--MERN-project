@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
-  "author": "Riaj Hasan Parant",
+  "author": "Riaj Hasan Pranto",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
