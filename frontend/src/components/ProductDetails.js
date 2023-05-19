@@ -40,8 +40,8 @@ const ProductDetails = () => {
     console.log(inputs);
 
       const sendRequest = async () => {
-      await fetch("http://localhost:8888/products", {
-        method: 'POST',
+      await fetch(`http://localhost:8888/products/${id}`, {
+        method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: inputs.name,
@@ -62,9 +62,7 @@ const ProductDetails = () => {
 
   return (
     <>
-      {/* {singleProduct && <h1>the product is {singleProduct.description} </h1>} */}
-
-      <div className="updateForm">
+      <div className="container mt-4">
       <form onSubmit={handleSubmit}>
         <fieldset className="border p-2">
           <legend className="w-auto"> Products </legend>{' '}
