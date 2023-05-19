@@ -1,4 +1,6 @@
-const router = require('express').Router();
+const express = require('express');
+const router = express.Router();
+
 const {
   getProducts,
   getProductById,
@@ -20,10 +22,12 @@ router.post('/', createProduct);
 router.patch('/:id', editProduct);
 
 //Delete data
-
 router.delete('/:id', removeProduct);
 
 module.exports = router;
+
+
+
 
 /* 
 Working with save()

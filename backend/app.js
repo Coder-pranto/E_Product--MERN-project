@@ -10,10 +10,9 @@ const port = process.env.PORT || 5000
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.set('view engine', 'ejs')
-
 //routes
 app.use('/products',router);
+
 
 app.get('/' , (req , res)=>{
 
