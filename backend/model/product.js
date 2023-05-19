@@ -29,4 +29,4 @@ const productSchema = new Schema({
 module.exports = mongoose.model('Product',productSchema);
 
 
-//'Product' is collection name
+//'Product' = 'products' will be the collection name
